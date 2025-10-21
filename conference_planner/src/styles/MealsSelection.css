@@ -1,0 +1,142 @@
+.meals-selection {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.section-header {
+  background: linear-gradient(135deg, #5a4fcf, #7a5cff); /* Violet Blue gradient */
+  color: white;
+  padding: 15px;
+  text-align: center;
+  margin-bottom: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(91, 71, 200, 0.3);
+}
+
+.section-header h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.people-count {
+  background: linear-gradient(145deg, #ffffff, #f5f2ff);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(91, 71, 200, 0.15);
+  margin-bottom: 30px;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.people-count:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 16px rgba(91, 71, 200, 0.2);
+}
+
+.people-count label {
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin-right: 15px;
+  color: #372b73; /* Deep indigo text */
+}
+
+.people-input {
+  padding: 8px 12px;
+  border: 2px solid #c2b8ff;
+  border-radius: 6px;
+  font-size: 1rem;
+  width: 100px;
+  text-align: center;
+  background-color: #faf9ff;
+  color: #372b73;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.people-input:focus {
+  outline: none;
+  border-color: #7a5cff;
+  box-shadow: 0 0 8px rgba(122, 92, 255, 0.4);
+}
+
+.meals-grid {
+  background: linear-gradient(145deg, #ffffff, #f5f2ff);
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(91, 71, 200, 0.15);
+  margin-bottom: 30px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+
+.meal-option {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.meal-label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #372b73;
+  transition: color 0.3s ease;
+}
+
+.meal-label:hover {
+  color: #5a4fcf;
+}
+
+.meal-checkbox {
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+  accent-color: #7a5cff; /* Modern checkbox color */
+}
+
+.meal-name {
+  user-select: none;
+}
+
+.meal-price {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #5a4fcf;
+  margin-left: 28px;
+}
+
+.total-cost {
+  background: linear-gradient(145deg, #f5f2ff, #eae4ff);
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(91, 71, 200, 0.15);
+}
+
+.total-cost span {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #372b73;
+}
+
+@media (max-width: 768px) {
+  .meals-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 20px;
+  }
+
+  .people-count {
+    padding: 15px;
+  }
+
+  .people-count label {
+    display: block;
+    margin-bottom: 10px;
+    margin-right: 0;
+  }
+}

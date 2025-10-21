@@ -1,0 +1,82 @@
+.navigation {
+  background: linear-gradient(135deg, #5a4fcf, #7a5cff); /* Violet Blue gradient */
+  color: #ffffff;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 10px rgba(91, 71, 200, 0.3);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.nav-title {
+  font-size: 1.6rem;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+.nav-center {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-btn {
+  background: none;
+  border: none;
+  color: #ffffff;
+  font-size: 1rem;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+
+.nav-btn:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+  transform: translateY(-2px);
+}
+
+.nav-btn.active {
+  background-color: rgba(255, 255, 255, 0.25);
+  font-weight: bold;
+  box-shadow: 0 2px 6px rgba(91, 71, 200, 0.3);
+}
+
+.show-details-btn {
+  background: linear-gradient(135deg, #b799ff, #8d6eff);
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 3px 8px rgba(91, 71, 200, 0.3);
+}
+
+.show-details-btn:hover {
+  background: linear-gradient(135deg, #a285ff, #7357ff);
+  transform: translateY(-2px);
+  box-shadow: 0 5px 12px rgba(91, 71, 200, 0.4);
+}
+
+@media (max-width: 768px) {
+  .navigation {
+    flex-direction: column;
+    gap: 15px;
+    padding: 15px;
+  }
+
+  .nav-center {
+    gap: 10px;
+  }
+
+  .nav-btn {
+    padding: 8px 15px;
+    font-size: 0.9rem;
+  }
+}

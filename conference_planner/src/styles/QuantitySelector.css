@@ -1,0 +1,56 @@
+.quantity-selector {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: center;
+}
+
+.quantity-btn {
+  width: 35px;
+  height: 35px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  box-shadow: 0 3px 6px rgba(91, 71, 200, 0.2);
+}
+
+.quantity-btn.decrement {
+  background-color: #7a5cff; /* Violet Blue */
+  color: #fff;
+}
+
+.quantity-btn.decrement:hover {
+  background-color: #5a4fcf; /* Deep Violet */
+  box-shadow: 0 5px 12px rgba(90, 79, 207, 0.3);
+}
+
+.quantity-btn.increment {
+  background-color: #7a5cff; /* Violet Blue */
+  color: #fff;
+}
+
+.quantity-btn.increment:hover {
+  background-color: #5a4fcf; /* Deep Violet */
+  box-shadow: 0 5px 12px rgba(90, 79, 207, 0.3);
+}
+
+.quantity-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  background-color: #c3b8ff; /* Muted violet */
+  box-shadow: none;
+}
+
+.quantity-display {
+  font-size: 1.1rem;
+  font-weight: bold;
+  min-width: 30px;
+  text-align: center;
+  color: #372b73; /* Dark indigo text */
+}

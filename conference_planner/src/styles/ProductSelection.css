@@ -1,0 +1,38 @@
+.product-selection {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f5f2ff, #eae4ff); /* Soft violet gradient */
+  color: #372b73;
+}
+
+.selection-content {
+  padding: 30px;
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(91, 71, 200, 0.15);
+}
+
+.section-container {
+  margin-bottom: 60px;
+  scroll-margin-top: 80px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.section-container:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 18px rgba(91, 71, 200, 0.2);
+}
+
+.section-container:last-child {
+  margin-bottom: 30px;
+}
+
+@media (max-width: 768px) {
+  .selection-content {
+    padding: 15px;
+  }
+
+  .section-container {
+    margin-bottom: 40px;
+    scroll-margin-top: 120px;
+  }
+}

@@ -1,0 +1,99 @@
+.landing-page {
+  min-height: 100vh;
+  background-image: url("/images/landing.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.landing-page::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.landing-content {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  min-height: 100vh;
+  padding: 40px;
+  gap: 60px;
+}
+
+.landing-left {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+}
+
+.landing-title {
+  font-size: 3.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+
+.landing-subtitle {
+  font-size: 1.2rem;
+  margin-bottom: 40px;
+  opacity: 0.9;
+}
+
+.get-started-btn {
+  background-color: #f4c430;
+  color: #333;
+  border: none;
+  padding: 15px 30px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  width: fit-content;
+  transition: background-color 0.3s ease;
+}
+
+.get-started-btn:hover {
+  background-color: #e6b82a;
+}
+
+.landing-right {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+.company-description {
+  color: white;
+  font-size: 1rem;
+  line-height: 1.6;
+  text-align: justify;
+}
+
+.company-description p {
+  margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+  .landing-content {
+    flex-direction: column;
+    padding: 20px;
+    gap: 30px;
+  }
+
+  .landing-title {
+    font-size: 2.5rem;
+  }
+
+  .company-description {
+    font-size: 0.9rem;
+  }
+}
